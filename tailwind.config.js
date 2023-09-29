@@ -1,18 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      margin: {
+        'top-adjusted': '16rem',
       },
+      
     },
+
+    colors: {
+      'adainblack': '#FAE392',
+      'niyuyello': '#F79327',
+      'niyuwhite': '#ffffff',
+      'niyunav': '#793FDF',
+      'niyublack': '#000000'
+
+    },
+    fontFamily:{
+      monteserat: "Montserrat",
+      popins:"Poppins"
+    },
+    
+      extend: {
+      backgroundImage: {
+        'space1one': "url('/images/space1one.jpg')",
+        
+        },
   },
   plugins: [],
+  },
 }
+
+
